@@ -5,7 +5,7 @@ import products from '../products'
 
 const Homescreen = () => {
   return (
-    <>
+    <div>
       <h1>Latest Products</h1>
       <Row>
         {products.map(product => (
@@ -14,8 +14,7 @@ const Homescreen = () => {
           </Col>
         ))}
       </Row>
-      
-    </>
+    </div>
   )
 }
 

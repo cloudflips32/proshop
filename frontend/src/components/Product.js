@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Card } from 'react-bootstrap'
-import '../products'
 import Rating from './Rating'
+import '../products'
 
 const Product = ({ product }) => {
   return (
@@ -28,7 +28,6 @@ const Product = ({ product }) => {
           ${product.price}
         </Card.Text>
       </Card.Body>
-      
     </Card>
   )
 }
