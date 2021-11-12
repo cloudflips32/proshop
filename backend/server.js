@@ -1,5 +1,5 @@
 const express = require('express')
-const products = require('.data/products')
+const products = require('./data/products')
 const { match } = require('assert')
 
 const app = express()
@@ -13,7 +13,7 @@ app.get('/api/products', (req,res) => {
 })
 
 app.get('/api/products/:id', (req,res) => {
-  const product = products.find(p => p._id === match.params.id)
+  const product = products.find(p => p._id === req.params.id)
   res.json(product)
 })
 
