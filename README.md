@@ -6,10 +6,12 @@
 Technologies Learned So Far-  
 Git  
 ReactJS  
+Axios  
 NodeJS  
-MongoDB  
+Mongoose/MongoDB  
 Express  
 BCryptJS  
+Dotenv  
 React-Bootstrap (Will rework with Material UI)  
 React-Router-Bootstrap  
 Colors (All the way back to colors!)  
