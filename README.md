@@ -13,6 +13,7 @@
   * Axios 
   * Mongoose/MongoDB  
   * Express  
+  * ExpressAsyncHandler
   * BCryptJS  
   * Dotenv   
 3. Misc.
