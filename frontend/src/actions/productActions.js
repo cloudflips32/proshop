@@ -1,6 +1,6 @@
 import { 
   PRODUCT_LIST_REQUEST, 
-  PRODUCT_lIST_SUCCESS, 
+  PRODUCT_LIST_SUCCESS, 
   PRODUCT_LIST_FAIL,
   PRODUCT_DETAILS_REQUEST, 
   PRODUCT_DETAILS_SUCCESS, 
@@ -14,7 +14,7 @@ export const listProducts = () => async ( dispatch
     dispatch({ type: PRODUCT_LIST_REQUEST })
       const { data } = await axios.get('/api/products')
 
-    dispatch({ type: PRODUCT_lIST_SUCCESS,
+    dispatch({ type: PRODUCT_LIST_SUCCESS,
       payload: data
     }) 
   } catch (error) {
