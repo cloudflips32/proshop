@@ -20,7 +20,7 @@ export const addToCart = (id, qty) => async (dispatch, getState) => {
 }
 
 export const removeFromCart = (id) => (dispatch, getState) => {
-  dispaatch({
+  dispatch({
     type: CART_REMOVE_ITEM,
     payload: id
   })

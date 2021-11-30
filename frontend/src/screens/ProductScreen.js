@@ -8,11 +8,11 @@ import Rating from '../components/Rating'
 import { listProductDetails } from '../actions/productActions'
 
 const ProductScreen = ({ history, match }) => {
-  const [qty, setQuanity] = useState(0)
+  const [qty, setQty] = useState(0)
 
   const dispatch = useDispatch()
 
-  const productDetailsReducer = useSelector(state => state.productDetails)
+  const productDetails = useSelector((state) => state.productDetails)
   const { loading, error, product } = productDetails
 
   useEffect(() => {
