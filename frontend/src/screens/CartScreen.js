@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -12,6 +13,14 @@ import {
 } from "react-bootstrap";
 import Message from "../components/Message";
 import { addToCart, removeFromCart } from "../actions/cartActions";
+=======
+import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import { Row, Col, ListGroup, Image, Form, Button, Card } from 'react-bootstrap'
+import Message from '../components/Message'
+import { addToCart, removeFromCart } from '../actions/cartActions'
+>>>>>>> 20eccb0c5185e4fc1bb7906128a18052534683fe
 
 const CartScreen = ({ match, location, history }) => {
   const productId = match.params.id;
@@ -20,8 +29,13 @@ const CartScreen = ({ match, location, history }) => {
 
   const dispatch = useDispatch();
 
+<<<<<<< HEAD
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
+=======
+  const cart = useSelector((state) => state.cart)
+  const { cartItems } = cart
+>>>>>>> 20eccb0c5185e4fc1bb7906128a18052534683fe
 
   useEffect(() => {
     if (productId) {
@@ -58,6 +72,7 @@ const CartScreen = ({ match, location, history }) => {
                   </Col>
                   <Col md={2}>${item.price}</Col>
                   <Col md={2}>
+<<<<<<< HEAD
                     <Form.Control
                       as='select'
                       value={item.qty}
@@ -71,15 +86,31 @@ const CartScreen = ({ match, location, history }) => {
                         <option key={x + 1} value={x + 1}>
                           {x + 1}
                         </option>
+=======
+                    <Form.Control 
+                      as='select' 
+                      value={item.qty} 
+                      onChange={(e) => dispatch(addToCart(item.product, 
+                      Number(e.target.value)))}
+                    >
+                      {[...Array(item.countInStock).keys()].map((x) => (
+                      <option key={x+1} value={x+1}>
+                      {x+1}
+                      </option>
+>>>>>>> 20eccb0c5185e4fc1bb7906128a18052534683fe
                       ))}
                     </Form.Control>
                   </Col>
                   <Col md={2}>
+<<<<<<< HEAD
                     <Button
                       type='button'
                       variant='light'
                       onClick={() => removeFromCartHandler(item.product)}
                     >
+=======
+                    <Button type='button' variant='light' onClick={() => removeFromCartHandler(item.product)}>
+>>>>>>> 20eccb0c5185e4fc1bb7906128a18052534683fe
                       <i className='fas fa-trash'></i>
                     </Button>
                   </Col>
