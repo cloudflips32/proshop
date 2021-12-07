@@ -10,7 +10,7 @@
   * React-Router-Bootstrap
   * React-Redux
   * React-Router-Dom
-  * * Axios 
+  * Axios 
 2. Backend 
   * NodeJS  
   * Mongoose/MongoDB  
