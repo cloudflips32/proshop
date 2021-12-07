@@ -8,9 +8,11 @@
   * ReactJS  
   * React-Bootstrap (Will rework with Material UI)
   * React-Router-Bootstrap
+  * React-Redux
+  * React-Router-Dom
+  * * Axios 
 2. Backend 
   * NodeJS  
-  * Axios 
   * Mongoose/MongoDB  
   * Express  
   * ExpressAsyncHandler
